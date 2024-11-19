@@ -63,5 +63,3 @@ We deprecated the concept and implementation of ipfs due to the slow serving spe
 # Referal Links
 ## If you wish to be put on the referal list and offer an affiliate link service please email me at pheonixriseofthe@gmail.com
 - https://billing.dacentec.com/hostbill/?affid=922
-
-# streampal
