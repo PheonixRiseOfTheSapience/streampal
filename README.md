@@ -1,4 +1,4 @@
-# Streampalv2
+# Streampal
 
 - Free Streaming Search Engine Website called StreamPal which doesnt host any files directly on its site.
 - **Unfinished  With a P2P Video Providing Service Included ontop of the search engine design!**
