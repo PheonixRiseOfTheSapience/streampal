@@ -1,0 +1,5 @@
+Need to make a Instructional Tutorial on how to solve potential SYNC issues with ipfs 
+
+and also a tutorial on how to get ipfs-sync to run and auto matically sync the files for you! like one drive!
+1: Have to change the specs sync option to false
+2: Add the "NoSync: true," At the very beginning of the config after the first { bracket!

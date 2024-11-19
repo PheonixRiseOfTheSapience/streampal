@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="keywords"
+    content="seo, search engine optimization, streaming, streampal, free movies and tv shows, decentralized movies, decentralized tv shows, constant service, p2p streaming coming soon" />
+  <title> StreamPal: Decentralized Movies & TV Shows! P2P Streaming Coming Soon!</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/x-icon" href="assets/logos/TabLogo.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- KEEP THIS V so borders work properly on the Table! Under Search! --->
+  <!--<script src="jquery-3.6.3.min.js"></script>-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="styleanimation.css">
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+</head>
+
+<body class="body">
+  <div onclick="changeBorder()" id="logobutton" style="background-color: #363845;margin-bottom:0rem;">
+    <img id="logobutton" class="logoClass" src="assets/logos/StreamPalLogo.png" alt="Stream Pal Top Logo">
+  </div>
+  <!-- 
+     FAQ TAB BEGIN////////////////////////////////////////////////////
+    
+    -->
+
+
+
+
+
+  <!-- 
+     HOME TAB BEGIN////////////////////////////////////////////////////
+    
+    -->
+
+  <!--Beginning Of Home Tab --->
+  <!-- <div></div> -->
+  <!-- -->
+  <div id="tabs" class="mytabs">
+    <input type="radio" id="tabhome" name="mytabs" checked>
+    <label class="tagSelector" id="tabhomelabel" for="tabhome"><b>Home</b></label>
+    <div class="tab">
+      <h2 class="mainTitle">Home</h2>
+      <div class="homeTop">
+        <h3 style="text-shadow: 2px black ; "> Instructions</h3>
+        <ul class="homeList" style="font-weight: 150; font-size: 125%;">
+          <li>
+            First select show in either Movies ,
+            T.V. Shows, Or Search
+          </li>
+          <li>
+            Second , navigate to the watch tab to view
+          </li>
+          <li>
+            Third , choose a server , episode , and season. Servers may vary.
+
+          </li>
+          <li>
+            Fourth , refresh site as needed to reset memory.
+          </li>
+          <li>
+            Fifth, Watch , repeat , enjoy.
+          </li>
+
+
+        </ul>
+
+      </div>
+
+      <div class="homeTabs">
+        <input type="radio" id="Bookmarks" name="homeTabs" checked>
+        <label for="Bookmarks"><b>Bookmarks</b></label>
+        <div class="homeTab">
+          <div id="homeBookmarksDiv" class="homeDiv1">
+            <h2 class="mainTitle2">Your Bookmarks</h2>
+            <span id="bookmarkContainerAll" class="bookmarkSpanClass" style="display: none">
+              <h3 class="homeH3T">Tv Shows</h3>
+              <div id="bookmarkContainer" class="containerofCardsHome">
+                <ul id="bookmarklist" class="cards">
+                </ul>
+              </div>
+              <h3 class="homeH3M">Movies</h3>
+              <div id="bookmarkMovieContainer" class="containerofCardsHome">
+                <ul id="moviebookmarklist" class="cards">
+                </ul>
+              </div>
+            </span>
+          </div>
+        </div>
+
+
+        <input type="radio" id="WatchHistory01" name="homeTabs">
+        <label for="WatchHistory01"><b>History</b></label>
+        <div class="homeTab">
+          <div id="homeWatchDiv" class="homeDiv01">
+            <h2 class="mainTitle2">Your History</h2>
+            <span id="watchHistory" class="watchHistorySpanClass" style="display: none">
+              <h3 class="homeH3T">Tv Shows</h3>
+              <div class="containerofCardsHome">
+                <ul id="tvHistorylist" class="cards">
+                </ul>
+              </div>
+              <h3 class="homeH3M">Movies</h3>
+              <div class="containerofCardsHome">
+                <ul id="movieHistorylist" class="cards">
+                </ul>
+              </div>
+            </span>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+    <!-- End Of Home Tab --->
+
+
+
+    <!-- Beginning of About Tab --->
+    <input type="radio" id="tababout" name="mytabs">
+    <label class="tagSelector" id="tababoutlabel" for="tababout"><b>FAQ</b></label>
+    <div class="tab">
+      <h2 class="mainTitle">FAQ</h2>
+      <ul class="faqClass">
+        <li>
+          <h1>How do i become a file provider in this decentralized space?</h1>
+          <ul class="faqClass">
+            <li>Easy please head on over to the ipfs.tech website and get familiar with IPNS and how to publish to a
+              IPNS once you learn that then your next step will be to download there IPFS Desktop App and then head on
+              over to our ExamplePage!</li>
+            <li><a href="docs/example.html">Click me to head to the example page for more information!</a></li>
+            <li>You will be required to submit your IPNS CID to our website using our File Provider Submit Page!</li>
+          </ul>
+        </li>
+        <li>
+          <h1>Will i have to worry if my ip is exposed by being a file provider?</h1>
+          <ul class="faqClass">
+            <li>Well im assuming no since ipfs system runs off a CID style communication instead of a IP communication
+              and everything is relayed through there servers as to not risk client ips being accessed!</li>
+          </ul>
+        </li>
+        <li>
+          <h1>Why Decentralized Streaming?</h1>
+          <ul class="faqClass">
+            <li>Well are you tired of constant domain name changes and having to keep up with a new url for watching
+              your free movies and tv shows!</li>
+            <li>Decentralized Streaming offers the chance to solve all of these along with cutting down on Files being
+              removed or took down by a moderated file host provider.</li>
+            <li>When you select what movie you want to watch it will loop through all the known File providers and try
+              and find all the ones which contain the movie you are trying to watch and then finds the one with the best
+              ping rate and starts playing it in your browser!</li>
+            <li>And we auto remove any Unresponsive File providers and readd them to the public list as soon as they are
+              responding again!</li>
+            <li>Our website or anyone elses website may use this public list to stream urls or files from it!</li>
+          </ul>
+        </li>
+        <li>
+          <h1>Question 4?</h1>
+          <ul class="faqClass">
+            <li>Answer 4!</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- End of FAQ Tab --->
+    <!-- 
+     GENRES TAB BEGIN////////////////////////////////////////////////////
+    
+    -->
+
+    <!-- Beginning of Genre Tab-->
+    <input type="radio" id="tabchannels" name="mytabs">
+    <label class="tagSelector" for="tabchannels" id="tabchannelslabel"><b>Channels</b></label>
+    <div class="tab">
+      <h2 class="mainTitle">Channels</h2>
+      <!--   -->
+      <section>
+        <h2 class="mainTitleseasons">- Page in Beta - </h2>
+        <ul id="listofrecommended" class="cards">
+        </ul>
+      </section>
+
+      <section id="suggestedcontainer" class="containerofCards2">
+        <h2 class="mainTitleseasons">Similar</h2>
+        <ul id="listofsuggested" class="cards">
+        </ul>
+      </section>
+      <!-- no div -->
+    </div>
+    <!-- End of Genre Tab-->
+    <!-- 
+    MOVIES TAB BEGIN////////////////////////////////////////////////////
+    
+    -->
+    <!-- Beginning of Movies Tab --->
+    <input type="radio" id="tabmovies" name="mytabs">
+    <label class="tagSelector" for="tabmovies" id="tabmovieslabel"><b>Movies</b></label>
+    <div class="tab">
+      <h2 class="mainTitle">Movies</h2>
+      <div class="tabcontainer" id="MovieListContainer">
+
+
+        <div class="cardContainerDiv1">
+          <div class="cardContainerDiv2">
+            <h3 class="cardContainerh3">Most Popular</h3>
+            <p><input type="checkbox" id="MostPopularMoviesMinimize" onclick="minimize(20, this)"></input></p>
+            <p tag="c">Minimize</p>
+            <p><input type="checkbox" id="MostPopularMoviesshowAll" onclick="tvshowAll(21, this)"></input></p>
+            <p tag="c">Show All</p>
+          </div>
+
+
+
+
+
+
+          <div onclick="changeBorder2()" class="containerofCards">
+            <ul id="popularmovielist" class="cards">
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="cardContainerDiv1">
+          <div class="cardContainerDiv02">
+            <h3 class="cardContainerh3">Top IMDB</h3>
+            <p><input type="checkbox" id="IMDBTopMoviesMinimize" onclick="minimize(21, this)"></input></p>
+            <p tag="c">Minimize</p>
+            <p><input type="checkbox" id="IMDBTopMoviesshowAll" onclick="tvshowAll(20, this)"></input></p>
+            <p tag="c">Show All</p>
+          </div>
+          <div onclick="changeBorder3()" class="containerofCards">
+            <ul id="IMDBTopmovielist" class="cards">
+            </ul>
+          </div>
+        </div>
+
+        <div class="cardContainerDiv1">
+          <div class="cardContainerDiv2">
+            <h3 class="cardContainerh3">Newest</h3>
+            <p><input type="checkbox" id="NewestMoviesMinimize" onclick="minimize(22, this)"></input></p>
+            <p tag="c">Minimize</p>
+            <p><input type="checkbox" id="NewestMoviesshowAll" onclick="tvshowAll(22, this)"></input></p>
+            <p tag="c">Show All</p>
+          </div>
+          <div class="containerofCards">
+            <ul onclick="changeBorder4()" id="newestmovielist" class="cards">
+              <li id="movieLisst"></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="cardContainerDiv1">
+          <div class="cardContainerDiv02">
+            <h3 class="cardContainerh3">Stoner Collection</h3>
+            <p><input type="checkbox" id="StonerMoviesMinimize" onclick="minimize(23, this)"></input></p>
+            <p tag="c">Minimize</p>
+          </div>
+          <div class="containerofCards">
+            <ul onclick="changeBorder5()" id="stonermovielist" class="cards">
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <!-- End of Movies Tab --
+    --------------------------------------------->
+
+
+    <!-- Tv Shows --->
+    <!-- 
+     TV SHOWS   54TAB BEGIN////////////////////////////////////////////////////
+    
+    -->
+
+    <input type="radio" id="tabtvshows" name="mytabs">
+    <label class="tagSelector" for="tabtvshows" id="tabtvlabel"><b>TV Shows</b></label>
+    <div class="tab">
+      <h2 class="mainTitle">TV Shows</h2>
+      <div class="tabcontainer" id="TVListContainer">
+        <!-- Most Popular Container Beginning --->
+        <div class="cardContainerDiv1">
+          <div class="cardContainerDiv2">
+            <h3 class="cardContainerh3">Most Popular</h3>
+            <p><input type="checkbox" id="MostPopularTVMinimize"></input></p>
+            <p tag="c">Minimize</p>
+            <p><input type="checkbox" id="MostPopularTVshowAll" onclick="tvshowAll(3, this)"></input></p>
+            <p tag="c">Show All</p>
+          </div>
+          <!-- The Actual container list below that gets objects filled into it is the populartvlist ul object below V--->
+          <div class="containerofCards">
+            <ul onclick="changeBorder6()" id="populartvlist" class="cards">
+            </ul>
+          </div>
+        </div>
+        <!--- Most Popular Container End --->
+
+
+
+        <!--- Top IMDB Container! --->
+        <div class="cardContainerDiv1">
+          <div class="cardContainerDiv02">
+            <h3 class="cardContainerh3">Top IMDB</h3>
+            <p><input type="checkbox" id="IMDBTopTVMinimize"></input></p>
+            <p tag="c">Minimize</p>
+            <p><input type="checkbox" id="IMDBTopTVshowAll" onclick="tvshowAll(1, this)"></input></p>
+            <p tag="c">Show All</p>
+          </div>
+          <div class="containerofCards">
+            <ul onclick="changeBorder7()" id="IMDBToptvlist" class="cards">
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="cardContainerDiv1">
+          <div class="cardContainerDiv2">
+            <h3 class="cardContainerh3">Newest</h3>
+            <p><input type="checkbox" id="NewestTVMinimize"></input></p>
+            <p tag="c">Minimize</p>
+            <p><input type="checkbox" id="NewestTVshowAll" onclick="tvshowAll(2, this)"></input></p>
+            <p tag="c">Show All</p>
+          </div>
+          <div class="containerofCards">
+            <ul onclick="changeBorder8()" id="newesttvlist" class="cards">
+            </ul>
+          </div>
+        </div>
+
+        <div class="cardContainerDiv1">
+          <div class="cardContainerDiv02">
+            <h3 class="cardContainerh3">Stoner Flixs</h3>
+            <p><input type="checkbox" id="StonerTVMinimize" style="padding-bottom:0rem;"></input></p>
+            <p tag="c">Minimize</p>
+          </div>
+          <div class="containerofCards">
+            <ul onclick="changeBorder9()" id="stonertvlist" class="cards">
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!--- End of TV Shows Tab --->
+    <!-- 
+    BEGIN////////////////////////////////////////////////////
+    
+    -->
+
+    <!-- Beginning of The Search Tab -->
+    <input type="radio" id="tabsearch" name="mytabs">
+    <label class="tagSelector" for="tabsearch" id="tabsearchlabel"><b>Search</b></label>
+    <div class="tab">
+      <h2 class="mainTitle">Search For A Movie or TV Show</h2>
+      <div name="SearchContainer" class="containerofCards2">
+        <h1 class="mainTitleseasons">Search</h1>
+        <div class="cards5">
+          <input type="search" id="searchbox"></input>
+        </div>
+
+      </div>
+
+      <div class="containerofCards">
+        <ul id="searchlist" class="cards">
+        </ul>
+      </div>
+
+      <div name="pagescontainer" class="containerofCards2">
+        <h1 class="mainTitleseasons">Pages</h1>
+        <div id="pagelist" name="pageslist" class="cards2">
+        </div>
+      </div>
+    </div>
+    <!-- END of The Search Tab -->
+
+
+
+    <!-- Beginning of The Watch Tab -->
+    <input type="radio" id="tabwatch" name="mytabs">
+    <label class="tagSelector" for="tabwatch" id="tabwatchlabel"><b>Watch</b></label>
+
+
+    <div class="tab">
+      <h2 class="mainTitle">Watch <img src="assets/bookmark.png" id="bookmarkButton" class="watchBookmarkButton"
+          onclick=" bookmark()">
+      </h2>
+      <p class="footerClass">If the video is not found below please try another server from further down below!</p>
+      <!-- mkv These will be how we will display video files provided by our decentralized setup!
+        <video width="320" height="240" controls src="assets/animation.mkv"></video>
+        <-- mp4
+        <video width="320" height="240" controls>
+          <source src="assets/animation.mp4" type="video/mp4" />
+        </video> -->
+      <div id="watchMovieContainer">
+        <iframe sandbox="" id="watchMoviePlayer" class="videoplayer" width="90%" height="800px" src="" frameborder="0"
+          allowfullscreen allow="encrypted-media; media; autoplay" style="display: none;"></iframe>
+        <!-- <video style="display:none;" id="watchMoviePlayer" class="videoplayer" width="90%" height="auto" controls></video> -->
+      </div>
+      <div id="watchTvContainer">
+        <!-- <video style="display:none;" id="StreamPalTvPlayer"class="videoplayer" width="90%" height="auto" controls src="https://bafybeigkquelobekppzd4zncyi7ejbyemzdfwth42a3lxyaeirjcwwxmsq.ipfs.dweb.link/movies/jung_e2023/hd/1.mp4"></video> -->
+        <!-- src="https://databasegdriveplayer.xyz/player.php?type=series&imdb=tt14489308&season=1&episode=3"-->
+        <iframe
+          sandbox="allow-forms allow-modals allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation"
+          id="watchTvPlayer" class="videoplayer" scrolling="no" width="90%" height="980px" src="" frameborder="0"
+          allowfullscreen allow="encrypted-media; media; autoplay"></iframe>
+      </div>
+
+
+      <div id="detailpage">
+        <div id="servercontainer" class="containerofCards2">
+          <h2 class="mainTitleseasons">Servers Ad Free and Sandboxed</h2>
+          <ul id="ServersList" class="cards2">
+            <li name="server" class="card2" onclick="updateServer(1)">1</li>
+            <li name="server" class="card2" onclick="updateServer(2)">2</li>
+            <li name="server" class="card2" onclick="updateServer(3)">3</li>
+          </ul>
+        </div>
+        <div id="servercontainerWithAds" class="containerofCards2">
+          <h2 class="mainTitleseasons">Servers With Ads And Popups Adblocker Required</h2>
+          <ul id="adServersList" class="cards2">
+            <li name="server" class="card2" onclick="updateServer(4)">4</li>
+            <li name="server" class="card2" onclick="updateServer(5)">5</li>
+            <li name="server" class="card2" onclick="updateServer(6)">6</li>
+          </ul>
+        </div>
+
+        <!-- This will be our Internal File selection system from the decentralized system we create!
+        View from a video file contained in the public db which we will have a node option if someone wants to become a submission node for files! aka A Db provider with a api hoster! they host our public api service and just post and submit there db location on the ipfs network which they keep up with and etc..  we create a selection option per ipfs node provider! incase one goes down also we will have a internal fetch check if it cant ping the node it wont display it so it will keep from having no connection but cant entirely stop it ya know! lol
+        
+        <div id="filecontainer" class="seasonlist" style="display:none">
+          <h2 class="mainTitleseasons">File Selector</h2>
+          <div id="filelist" class="seasonnumbers">
+            <div class="seasonobj">File 1</div>
+            <div class="seasonobj">File 2</div>
+            <div class="seasonobj">File 3</div>
+            <div class="seasonobj">File 4</div>
+          </div>
+        </div>
+        <div id="urlcontainer" class="seasonlist" style="display:none">
+          <h2 class="mainTitleseasons">Url Selector</h2>
+          <div id="urllist" class="seasonnumbers">
+            <div class="seasonobj">Url 1</div>
+            <div class="seasonobj">Url 2</div>
+            <div class="seasonobj">Url 3</div>
+            <div class="seasonobj">Url 4</div>
+          </div>
+        </div>
+        -->
+        <div id="seasoncontainer" class="containerofCards2">
+          <h2 class="mainTitleseasons">Seasons</h2>
+          <ul id="listofseasons" class="cards2">
+            <div class="card2">Season 1</div>
+          </ul>
+        </div>
+
+        <div id="episodecontainer" class="containerofCards2">
+          <h2 class="mainTitleseasons">Episodes</h2>
+          <div id="listofepisodes" class="cards2">
+            <div data-tag='checked' class="card2">Episode 1</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="recommendedcontainer" class="containerofCards2">
+
+      </div>
+
+    </div>
+    <!-- END of The Watch Tab -->
+
+  </div>
+</body>
+
+
+<footer>
+
+  <p class="footerClass footerClassTop"> This website does not host any of the files listed or previewed or viewied on
+    our site. So we
+    are not liable for any copyright files please reach out to the file providers if you have any issues!</p>
+
+
+
+
+  <img class="footerClassImg" src="assets/footers/banner.png">
+  <p class="footerClass">
+  <div class="footerTitle">&copy;2024 JEBG1234 X11
+    <div> <a href="mailto:pheonixriseofthe@gmail.com?subject=ContactatStreamPal&amp;body=Message from StreamPal site. : "
+        style="color:rgba(159, 71, 241, 0.897)  ">Contact</a>
+    </div>
+
+</footer>
+
+</html>

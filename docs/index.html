@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title> StreamPal: Developers Documentations!</title>
+  <link rel="icon" type="image/x-icon" href="/streampalv2/assets/logos/TabLogo.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- KEEP THIS V so borders work properly on the Table! Under Search! --->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+
+<body>
+  <p style="background-color: #363845;margin-bottom:0rem;"><img class="logoClass" src="/streampalv2/assets/logos/StreamPalLogo.png">
+  </p>
+  <div class="mytabs">
+    <!-- Beginning of About Tab --->
+    <input type="radio" id="tababout" name="mytabs">
+    <label for="tababout"><b>How to be a File Provider This is Not Functional Yet</b></label>
+    <div class="tab">
+      <h2 class="mainTitle">How to be a File Provider This Is Not Functional Yet</h2>
+      <ul class="faqClass">
+        <li>
+          <h1>This is not functional yet Requires Gateway Server provider</h1>
+          <h1>IPFS File Structure Tutorial by hand! <input type="checkbox" id="TutorialByHand"> Minimize</input></h1>
+          <ul class="faqClass" id="TutorialByHandContainer">
+            <li>Easy one please head on over to the ipfs.tech website and download the IPFS Desktop software if you
+              haven't already!</li>
+            <li>Download our Template File Structure from right <a
+                href="exampleassets/fileprovidertemplate.zip">here</a>!</li>
+            <li>Also you can download our File Structure Generator Tool <a href="exampleassets/ourtool.jar">here</a>
+              Which can and will help you create the folder directorys just by filling out the forum boxs in the gui
+            </li>
+            <li>Then Please make sure you get familiar with how we require the video files to be structured in a folder
+              for example look at this image below</li>
+            <li><img src="exampleassets/rootfolderexample.png"> This is the Root Folder you should have from Downloading
+              our Template File!</img></li>
+            <li>This Is Inside the root of the Folder below</li>
+            <li><img src="exampleassets/insiderootfolder.png"> This is inside the Root Folder you should have from
+              Downloading our Template File!</img></li>
+            <li>This is the inside of the Movie Folder</li>
+            <li><img src="exampleassets/insidemoviefolder.png"> The name is determined by the movie name and release
+              year but removes illegale characters such as Space characters / slashes etc.. but keeps _ characters as
+              they are URL valid characters while also removing Uppercase Characters and replacing with lowercase
+              characters!</img></li>
+            <li>This is the inside of one of those movies listed above!</li>
+            <li><img src="exampleassets/insideamoviesubfolder.png"></img></li>
+            <li>This is the inside of the Tv Show Folder below</li>
+            <li><img src="exampleassets/insidetvshowsfolder.png"></img></li>
+            <li>This is the inside of the example tv show folder below</li>
+            <li><img src="exampleassets/insidetvshowsubfolder.png"></img></li>
+            <li>This is the inside of the tv shows season1 folder below</li>
+            <li><img src="exampleassets/insidetvshowseasonfolder.png"></img></li>
+            <li>This is the inside of the tv shows episode1 folder below</li>
+            <li><img src="exampleassets/insidetvepisodefolder.png"></img></li>
+            <li>This is the inside of the tv shows episode1 hd folder below</li>
+            <li><img src="exampleassets/insidetvhdfolder.png"></li>
+            <li>Last but not least Please read the Read.me inside the template file as it will contain some information
+              on how to update the info.json file properly each time you modify the folder and files</li>
+            <li>Also unlike onedrive where the files are symbolicly linked ipfs desktop when you add a folder or file to
+              it tends to make its own copy so you might want to familiarize yourself with there command line
+              application written in Go / Kubo if you dont want duplicates on your hdd as you can make a Symbolic link
+              that way with the command line interface!</li>
+            <li>Just have to make sure to publish each time you update the files if you use the Command line route if
+              not you will have to delete the old folder and reupload the new folder which its recommended to upload the
+              new folder and allow 1 day to go by before deleting the old folder to allow access until the publish gets
+              updated on the ipfs servers</li>
+          </ul>
+        </li>
+        <li>
+          <h1>How to use our File Structure Generator Software Tool! <input type="checkbox" id="TutorialBySoftware">
+            Minimize</input></h1>
+          <ul class="faqClass" id="TutorialBySoftwareContainer">
+            <li>Im assuming you done downloaded the tool alright now please open a command prompt in the directory where
+              the Java tool is located!</li>
+            <li>or you can double click it if you have changed the file properties to make it executable if not just
+              open command prompt in the file directory where our Tool is located at!</li>
+            <li>then you will type in the command prompt java -jar ourtool.jar</li>
+            <li>Then a graphical interface will come up you will select where your Root Folder directory is that you are
+              sharing to the IPFS desktop Software! AKA where you will be storing all the movies on your computer in our
+              File structure!</li>
+            <li>fill out the information and hit the submit button and it will generate all the folder structures needed
+              then you move your mp4 video files into the proper folders based on quality of the mp4 and based on what
+              season and episode if its a tv show! if you have more then 1 video file for that episode in the same
+              quality please use numerical ordering starting from 1 and counting up!</li>
+            <li>Like this <img src="exampleassets/videofilenameexamples.png"></img></li>
+          </ul>
+        </li>
+        <li>
+          <h1>How to Publish To IPNS <input type="checkbox" id="TutorialForIPNS"> Minimize</input></h1>
+          <ul class="faqClass" id="TutorialForIPNSContainer">
+            <li><a href="https://docs.ipfs.tech/how-to/publish-ipns/#publishing-ipns-names-with-kubo">Click Me to follow
+                the IPFS Documentation Tutorial on how to do it by command line!</a></li>
+            <li><a href="https://docs.ipfs.tech/concepts/file-systems/">Click Me To find out how to setup a Mutable File
+                System so you wont have to delete the root folder and have to reupload the root folder with Each change
+                it is highly recommended to use this style which mimics how onedrive works only difference is you have
+                to manually publish to ipns to update the publics version!</a></li>
+            <li>Simpler way of creating a Mutable File system is running this command if you installed the Kubo Command
+              line interface for ipfs along with the desktop installation!</li>
+            <li>Execute this command V</li>
+            <li>ipfs files write /root [path to your (movies and tvshows/Template file you downloaded/root folder
+              generated by our File Structure Generator Java Application!)root folder (Not the actual root folder for
+              those of u on linux or mac talking about the root folder of the tv shows and movies!) on your computer
+              which should be called root i understand how this can be confusing!]</li>
+            <li>Then open up IPFS Desktop and go to Files!</li>
+            <li>you should see the root folder click the three dots next to it on the far right!</li>
+            <li>select Publish to IPNS and make sure to use the same key when publishing either it be the default self
+              key etc..</li>
+            <li>Or follow along these image tutorials to update your public file repo and get your ipns url if you
+              havent generated it yet! following the traditional IPFS file scheme!</li>
+            <li>First you will need to Add the New Folder using the IPFS Desktop app under Files Click +Import</li>
+            <li>you will import the root folder! and then right click the three dots next to the newly imported root
+              folder if you are updating! and select publish to IPNS make sure to use the same signing key so you keep
+              the same IPNS CID so streaming website can always keep up with your movie and tv show files and allow
+              users to stream from them!</li>
+            <li>Also please take the time to enjoy the fact that you dont have to constantly re upload everytime video
+              gets taken down by copyright flag etc.. since there is no moderation over the ipfs network as its not
+              meant to be moderated!</li>
+            <li>Please Note you will have to run the IPFS Desktop app atleast 1 time a day every 24 hours to ensure the
+              files stay public over ipns if not they will be be made available publicly next time you bring the IPFS
+              Desktop app online!</li>
+            <li>This is due to how the IPFS Service works requires atleast communication once every 24 hours to
+              republish as it uses a 24 hour certificate system to make the ipns available across multiple gateways such
+              as dweb.link and ipfs.io etc..</li>
+          </ul>
+        </li>
+        <li>Question 4?<ul class="faqClass">
+            <li>Answer 4!</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- End of FAQ Tab --->
+
+
+    <!--Beginning Of Home Tab --->
+    <input type="radio" id="tabhome" name="mytabs" checked>
+    <label class="labelsClass" for="tabhome"><b>Home</b></label>
+    <div class="tab">
+      <h2 class="mainTitle">Home</h2>
+      <p>Here will be displayed movie container!</p>
+
+
+    </div>
+    <!-- End Of Home Tab --->
+
+  </div>
+</body>
+<footer>
+  <script src="script.js"></script>
+  <p class="footerClass">
+    <span>
+      &copy; &reg;2023 JEBG1234 X11
+  </p>
+  <p class="footerClass"> This website does not host any of the files listed or previewed or viewied on our site. So we
+    are not liable for any copyright files please reach out to the file providers if you have any issues!</p>
+  <img class="footerClassImg" src="/streampalv2/assets/footers/banner.png">
+  <span style="display:flex; justify-content: center;">
+    &rightharpoonup;&CupCap;&angmsdaa;
+  </span>
+
+</footer>
+
+</html>
+<!-- The following tag input uses the type attribute which specifies the image, and the src attribute for specifying the path of an image, with the height and width attributes. -->
+
+<!-- <input type="image" src="https://www.freepngimg.com/thumb/submit_button/25497-9-submit-button-photos.png" name="submit" width="100" height="48" alt="submit"/> -->
+
+<!-- By Putting it in a list html attribute we can make it list the movie entries and wrap them too so it displays up to 5 side by side etc..!-->
+<!-- Using the TMDB ID for the movie / TV Show we can ensure no glitches happen by having each button id specific!-->

@@ -1,0 +1,262 @@
+html, body {
+    height: auto;
+   
+  }
+  
+  /*html::-webkit-scrollbar{
+    display: none;
+  }*/
+
+  .logoClass{
+    background: #363845;
+    width: 100%;
+    height: auto;
+  }
+
+  .shows {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .shows li {
+    flex: 1;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    list-style: none;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background:#464652;
+  }
+
+  .shows li img {
+    max-width: 300px;
+    border-radius: 12px;
+  }
+  .shows li h2 {
+    color: #fff;
+    font-size: 1.8em;
+    padding: 15px 10px 0;
+    margin-top: auto;
+    font-family: "Oswald", sans-serif;
+  }
+  
+  .this {
+    background-color: #464652;
+    text-align: center;
+  }
+  
+  .submitRaffle {
+    margin: 10px;
+    -ms-flex-align: center;
+  }
+  
+  .testDiv{
+    display: flex;
+  }
+  
+  table, thead{
+    align-items: center;
+    width: 100%;
+    color:#212529;
+    vertical-align:top;
+    border-color:#dee2e6;
+    text-align: center;
+    border-collapse: collapse;
+    border-width: .19rem;
+  }
+  
+  th, td, tr {
+    border-width: .19rem;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  tbody{
+    border-width: .19rem
+  }
+  
+  .tab {
+    box-shadow: 4px 4px 6px 10px  #a56ee7;
+    border: #531a99 inset 2.5px;
+    margin:7px;
+    padding: 5px;
+    padding-top: -6px;
+    padding-left:12px;
+    color:white;
+  }
+  
+  .tabcontainerhidden{
+    display: none;
+  }
+  
+  .table {
+      border: 0px;
+  }
+  
+  .enterTab{
+   border: inset 0.2em rgb(0, 0, 0);
+    border-radius: 35%;
+    padding: 3px;
+    box-shadow: 2px 8px 5px 5px   rgba(184, 4, 255, 0.966);
+    font-family: "Demo" ,Arial, Helvetica, sans-serif;
+    
+  }
+  .mainTitle{
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-family: "Demo" ,Arial, Helvetica, sans-serif;
+    text-shadow:  0 0 2px red, 0 0 5px rgba(184, 4, 255, 0.966)
+  }
+  
+  .createChain{
+   border: inset 0.2em rgb(0, 0, 0);
+    border-radius: 35%;
+    padding: 3px;
+    box-shadow: 2px 8px 5px 5px   rgba(184, 4, 255, 0.966);
+     font-family: "Demo" ,Arial, Helvetica, sans-serif
+  }
+  
+  .settingsTab{
+      border: inset 0.2em rgb(0, 0, 0);
+      border-radius: 35%;
+      padding: 3px;
+      box-shadow: 2px 8px 5px 5px   rgba(184, 4, 255, 0.966);
+      font-family: "Demo" ,Arial, Helvetica, sans-serif
+  }
+  
+  .searchTab {
+      border: inset 0.2em rgb(0, 0, 0);
+      border-radius: 35%;
+      padding: 3px;
+      box-shadow: 2px 8px 5px 5px   rgba(184, 4, 255, 0.966);
+      font-family: "Demo" ,Arial, Helvetica, sans-serif
+  }
+  
+  /*  General / body CSS  */ 
+  
+    body {
+      background: #464652;
+      font-family: 'Roboto', sans-serif;
+    }
+  
+    p, article  {
+      padding-top: 2rem;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+  
+    .mytabs {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0px auto;
+      padding: 0px;
+    }
+  
+    .tab p {
+      padding-top: 1rem;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+    }
+    
+    .tab .CustomInput{
+      padding-top: 0px;
+    }
+  
+    .mytabs input[type="radio"] {
+      display: none;
+      flex-wrap: wrap;
+    }
+  
+    label {
+      color:rgb(0, 0, 0);
+      padding-top: 8px;
+      background: #363845;
+      
+      height: 40px;
+        text-align: center;
+      text-shadow:  1px 1px 3px cyan, .5px 2px 8px rgba(184, 4, 255, 0.966);
+     
+    }
+  
+  
+  
+   .tabSearch label {
+      /*color: #b621e6;*/
+      color:cyan;
+      padding-top: 8px;
+      background: #363845;
+      font-weight: bold;
+      max-width: 100%;
+      /*height: 40px;*/
+      width: 100%;
+      text-align: center;
+    }
+  
+    .mytabsSearchLabel input[type='radio']:checked+label+.tab {
+      display: block;
+    }
+  
+    .mytabsSearchLabel input[type="radio"]:checked+label {
+      background: #464652;
+    }
+  
+    .mytabs .tab {
+      padding: 2px;
+      background: #464652;
+      order: 1;
+      display: none;
+    }
+  
+    .mytabs .tab h2 {
+      font-size: 3em;
+      color: white;
+    }
+  
+    .mytabs input[type='radio']:checked+label+.tab {
+      display: block;
+    }
+  
+    .mytabs input[type="radio"]:checked+label {
+      /*background: #0c0c0ebd;*/
+      background:#464652;
+    }
+  
+  
+  
+    .tab{ 
+      display: flex;
+      flex-direction: column;
+    }
+
+.faqClass {
+    padding-bottom: 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.footerClass { 
+    display: flex;
+    justify-content: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+}
+
+.footerClassImg {
+  width: 100%;
+  height: auto;
+}
+
+  @font-face { 
+    font-family: "Demo" ;
+    src: url('/fonts/BeautySleepDemoRegular.ttf')
+}

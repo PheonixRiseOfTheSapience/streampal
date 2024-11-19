@@ -1,0 +1,11 @@
+@keyframes animation1 {
+    0% {
+      transform: rotateX(50deg);
+    }
+    50% {
+      transform: rotateX(100deg);
+    }
+    100% {
+      transform: rotateX(150deg);
+    }
+  }
