@@ -56,9 +56,10 @@ We deprecated the concept and implementation of ipfs due to the slow serving spe
 - TMDB for the API
 - IPFS for the P2P Protocol
 - DBlockbuster for the P2P Protocol Coming soon!
-- Electron for the NodeJS Application for File Providers! (File Providers are in) Alpha Stage Built by JEBG1234
+- Electron for the NodeJS Application for File Providers! (File Providers are in) Alpha Stage Built by PheonixRiseOfTheSapience
 - Github For Hosting the Site
 - https://github.com/vampeyer/ for the additional css styling and animations added to my site!
+- https://www.pwabuilder.com/
 
 # Referal Links
 ## If you wish to be put on the referal list and offer an affiliate link service please email me at pheonixriseofthe@gmail.com
