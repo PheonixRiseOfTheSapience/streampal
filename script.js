@@ -1042,7 +1042,7 @@ function updateServer(n) {
     document.cookie = "server=" + n + "; SameSite=strict; Secure; " + kia;
     //var server = parseInt(document.cookie.split('; ').find((row) => row.startsWith('server='))?.split('=')[1]);
     server = n;
-    var i = 1;
+    var i = 3;
     for (var v of document.getElementsByName("server")) {
       if (v.getAttribute('data-tag') === 'checked' && (parseInt(i) !== server)) {
         //console.log('Found!');
