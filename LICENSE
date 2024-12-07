@@ -1,17 +1,59 @@
-PheonixRiseOfTheSapience X11 License
+PheonixRiseOfTheSapience X11 License  
 
-Copyright (c) 2024 PheonixRiseOfTheSapience
+Copyright (c) 2024 PheonixRiseOfTheSapience (Johnathan Edward Brown)  
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software") and source code, to deal in the Software and source code without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software and source code, and to permit persons to whom the Software and source code are furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Materials"), including but not limited to any directories, subdirectories, and all associated files (collectively referred to as the "Licensed Directory"), to deal in the Materials without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Materials, and to permit persons to whom the Materials are furnished to do so, subject to the following conditions:  
 
-1. The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software and source code.
-2. Credit must be given to PheonixRiseOfTheSapience for the design pattern used in this Software and source code or License, If not open sourcing your code must make sure To include a Copy of this License with your LICENSE as the SUBLICENSE as clause 2.
-3. Users of this Software and source code are not required to open source their projects or use the PheonixRiseOfTheSapience X11 License in their projects if they use this project's design. However, they must still give credit to PheonixRiseOfTheSapience for the design pattern used in this Software and source code, as specified in clause 2.
+### Definitions
+**Licensed Directory**: Refers to the folder or directory in which this License is located, including all files, folders, and subdirectories contained within it.  
+**Directory**: A storage structure that may contain files and/or additional directories (subdirectories).  
+**Subdirectory**: A directory located within another directory. Subdirectories may contain additional files, folders, and subdirectories.  
 
-THE SOFTWARE AND SOURCE CODE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE AND SOURCE CODE.
+### 1. Attribution and Licensing Terms  
+1.1. The above copyright notice, identifying **PheonixRiseOfTheSapience (Johnathan Edward Brown)** as the copyright holder, and this permission notice shall be included in all copies or substantial portions of the Materials.  
+1.2. Clear and prominent attribution must be given to **PheonixRiseOfTheSapience (Johnathan Edward Brown)** in all distributed or published works derived from the Materials. This includes, but is not limited to, visible credit in documentation, user interfaces, instructional materials, and publicly visible outputs.  
+1.3. This License must be included in all derivative works or redistributed versions of the Materials, ensuring the terms remain binding.  
 
-Contact Information:
-Email: pheonixriseofthe@gmail.com
+### 2. Scope of License  
+2.1. This License applies to all Materials, including but not limited to source code, design patterns, instructional materials, text files, tutorials, or any other related files, as well as any files, directories, or subdirectories within the Licensed Directory.  
+2.2. Redistribution or modification of any content within the Licensed Directory must comply with the terms of this License.  
+2.3. Removal, alteration, or obfuscation of this License from any portion of the Licensed Directory constitutes a direct violation.  
 
-Updated as of: December 2, 2024
-Effective Date: October 28, 2024
+### 3. Repository Posting and Protection  
+3.1. When posting the Licensed Directory on public or private repositories, the repository owner must ensure this License is visibly included and not removed, altered, or obfuscated in any form.  
+3.2. Intellectual property rights to the Materials, including but not limited to the design patterns, algorithms, tutorials, instructional materials, and associated text files within the Licensed Directory, remain with **PheonixRiseOfTheSapience (Johnathan Edward Brown)**.  
+3.3. Repository maintainers or users may not impose additional terms, policies, or agreements (e.g., repository terms of service) that conflict with, override, or diminish the enforceability of this License.  
+3.4. Any forks, contributions, or derivative works posted within repositories must also include this License, and the Licensor must be attributed as outlined in Section 1.  
+
+### 4. Prohibition on Copyright, Trademark, and Patent Claims  
+4.1. Users may not register or assert exclusive rights (e.g., copyright, trademark, patent) over any portion of the Materials, whether original or modified, including content in subdirectories.  
+4.2. Any unauthorized attempt to file patents, copyrights, trademarks, or intellectual property claims related to the Materials or their derivatives automatically grants **PheonixRiseOfTheSapience (Johnathan Edward Brown)** **100% ownership** of the resulting patent, copyright, or trademark.  
+4.3. In cases where such unauthorized claims generate profits or royalties, **50% of all proceeds** must be shared with the Licensor, with full legal enforcement to ensure compliance.  
+4.4. Users or repository maintainers may not circumvent this clause through external agreements, policies, or terms of service.  
+
+### 5. Commercial Use and Profit Sharing  
+5.1. Commercial use of the Materials, including files located in subdirectories, is permitted solely under the condition that the profit-sharing and attribution obligations specified herein are strictly followed.  
+5.2. Users must disclose all earnings derived from the Materials upon the Licensor’s request.  
+5.3. Users are required to share **50% of profits**, including indirect earnings, with **PheonixRiseOfTheSapience (Johnathan Edward Brown)** for all commercial activities involving the Materials.  
+
+### 6. Audit and Enforcement  
+6.1. **PheonixRiseOfTheSapience (Johnathan Edward Brown)** reserves the right to audit repository postings and commercial activities to verify compliance with this License. Non-compliance may result in immediate revocation of License rights and/or legal action.  
+6.2. Repository maintainers and users found to be in violation of this License will be held liable under intellectual property laws.  
+
+### 7. Binding Agreement and Automatic Ownership Rights  
+7.1. This License constitutes a legally binding agreement between **PheonixRiseOfTheSapience (Johnathan Edward Brown)** and the Licensee.  
+7.2. Any attempt to file patents, trademarks, or copyrights for the Materials or derivatives without complying with this License will automatically result in the Licensor being granted **100% ownership** of the rights.  
+7.3. Removal, alteration, or obfuscation of this License from the Licensed Directory constitutes a direct violation of the License.  
+
+### 8. Warranty Disclaimer and Liability Limitation  
+THE MATERIALS ARE PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM OR IN CONNECTION WITH THE MATERIALS.  
+
+### 9. Jurisdiction and Governing Law  
+9.1. This License shall be governed by and construed under the laws of [USA/State Of North Carolina].  
+9.2. Disputes shall be subject to the exclusive jurisdiction of the courts of [USA/State Of North Carolina].  
+
+Contact Information:  
+Email: pheonixriseofthe@gmail.com  
+
+Effective Date: October 28, 2024  
+Updated as of: December 7, 2024
